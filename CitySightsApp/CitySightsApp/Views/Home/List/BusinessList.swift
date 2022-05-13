@@ -20,6 +20,7 @@ struct BusinessList: View {
                 BusinessSection(title: "Sights", businesses: model.sights)
                 
             }
+            .padding()
         }
     }
 }

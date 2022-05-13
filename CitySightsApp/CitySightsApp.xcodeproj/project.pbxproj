@@ -19,6 +19,10 @@
 		E2AFE6D4282704F1003C2B3C /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6D3282704F1003C2B3C /* BusinessList.swift */; };
 		E2AFE6D6282706FD003C2B3C /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6D5282706FD003C2B3C /* BusinessSectionHeader.swift */; };
 		E2AFE6D8282707CB003C2B3C /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6D7282707CB003C2B3C /* BusinessSection.swift */; };
+		E2AFE6DB28276856003C2B3C /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6DA28276856003C2B3C /* Spinner.swift */; };
+		E2AFE6DD2829C345003C2B3C /* Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6DC2829C345003C2B3C /* Preview.swift */; };
+		E2AFE6DF2829C4A1003C2B3C /* ViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6DE2829C4A1003C2B3C /* ViewExtention.swift */; };
+		E2AFE6E12829C7C9003C2B3C /* RoundedCornersShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AFE6E02829C7C9003C2B3C /* RoundedCornersShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +39,10 @@
 		E2AFE6D3282704F1003C2B3C /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
 		E2AFE6D5282706FD003C2B3C /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
 		E2AFE6D7282707CB003C2B3C /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		E2AFE6DA28276856003C2B3C /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		E2AFE6DC2829C345003C2B3C /* Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preview.swift; sourceTree = "<group>"; };
+		E2AFE6DE2829C4A1003C2B3C /* ViewExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtention.swift; sourceTree = "<group>"; };
+		E2AFE6E02829C7C9003C2B3C /* RoundedCornersShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCornersShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,10 +97,13 @@
 		E2AFE6BF28236694003C2B3C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E2AFE6D92827683D003C2B3C /* Components */,
 				E2AFE6CC2826F964003C2B3C /* Home */,
 				E2AFE6CD2826FA1B003C2B3C /* Denied */,
 				E2AFE6CB2826F956003C2B3C /* Onboarding */,
 				E2AFE6B328236653003C2B3C /* LaunchView.swift */,
+				E2AFE6DC2829C345003C2B3C /* Preview.swift */,
+				E2AFE6DE2829C4A1003C2B3C /* ViewExtention.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,6 +164,15 @@
 				E2AFE6D7282707CB003C2B3C /* BusinessSection.swift */,
 			);
 			path = List;
+			sourceTree = "<group>";
+		};
+		E2AFE6D92827683D003C2B3C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E2AFE6DA28276856003C2B3C /* Spinner.swift */,
+				E2AFE6E02829C7C9003C2B3C /* RoundedCornersShape.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,15 +245,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2AFE6DB28276856003C2B3C /* Spinner.swift in Sources */,
 				E2AFE6B428236653003C2B3C /* LaunchView.swift in Sources */,
+				E2AFE6DF2829C4A1003C2B3C /* ViewExtention.swift in Sources */,
 				E2AFE6D12827011E003C2B3C /* HomeView.swift in Sources */,
 				E2AFE6C72826DC09003C2B3C /* BusinessSearch.swift in Sources */,
 				E2AFE6D6282706FD003C2B3C /* BusinessSectionHeader.swift in Sources */,
+				E2AFE6E12829C7C9003C2B3C /* RoundedCornersShape.swift in Sources */,
 				E2AFE6C52826DA08003C2B3C /* Business.swift in Sources */,
 				E2AFE6B228236653003C2B3C /* CitySightsApp.swift in Sources */,
 				E2AFE6D4282704F1003C2B3C /* BusinessList.swift in Sources */,
 				E2AFE6D8282707CB003C2B3C /* BusinessSection.swift in Sources */,
 				E2AFE6C328236895003C2B3C /* ContentModel.swift in Sources */,
+				E2AFE6DD2829C345003C2B3C /* Preview.swift in Sources */,
 				E2AFE6CA2826EAF7003C2B3C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
