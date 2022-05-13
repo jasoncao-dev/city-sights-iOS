@@ -26,7 +26,7 @@ struct BusinessSection: View {
                     
                     HStack(spacing: 15.0) {
                         
-                        AsyncImage(url: URL(string: business.image_url ?? "firstwatch_preview")) { image in
+                        AsyncImage(url: URL(string: business.imageUrl ?? "firstwatch_preview")) { image in
                             image.resizable()
                         } placeholder: {
                             ProgressView()
