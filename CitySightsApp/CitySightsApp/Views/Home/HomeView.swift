@@ -39,7 +39,11 @@ struct HomeView: View {
                                     Text("San Francisco, CA")
                                         .font(.system(size: 16))
                                     Spacer()
-                                    //Text("Switch to map view")
+                                    Button(action: {
+                                        isMapShowing = true
+                                    }) {
+                                        Text("Map View")
+                                    }
                                 }
                                 .padding(.horizontal, 50.0)
                             }
@@ -54,6 +58,8 @@ struct HomeView: View {
                     .ignoresSafeArea()
                 } else {
                     // Show map
+                    BusinessMap()
+                        .ignoresSafeArea()
                 }
             }
         } else {
