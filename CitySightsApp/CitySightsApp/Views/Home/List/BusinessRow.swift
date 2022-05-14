@@ -34,6 +34,7 @@ struct BusinessRow: View {
                 VStack(alignment: .leading, spacing: 7.0) {
                     Text(business.name ?? "")
                         .font(Font.system(size: 16, weight: .medium))
+                        .multilineTextAlignment(.leading)
                     VStack(alignment: .leading, spacing: 5.0) {
                         Text(business.categories?[0].title ?? "American")
                             .foregroundColor(.white)
@@ -69,5 +70,6 @@ struct BusinessRow: View {
             .padding(.horizontal, 20.0)
         }
         .padding(.vertical, 5.0)
+        .tint(.black)
     }
 }

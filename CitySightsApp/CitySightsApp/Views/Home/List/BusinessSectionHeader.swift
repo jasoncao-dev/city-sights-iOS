@@ -13,9 +13,9 @@ struct BusinessSectionHeader: View {
     
     var body: some View {
         ZStack(alignment: .leading) {
-            Rectangle()
-                .foregroundColor(Color(red: 0.96078, green: 0.96078, blue: 0.97255))
-                .frame(height: 50.0)
+            //Rectangle()
+                //.foregroundColor(Color(red: 0.96078, green: 0.96078, blue: 0.97255))
+                //.frame(height: 50.0)
 
             HStack {
                 Text(title)
