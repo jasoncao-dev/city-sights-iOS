@@ -10,6 +10,7 @@ import SwiftUI
 struct BusinessDetail: View {
     
     var business: Business
+    @State private var showDirection = false
     
     var body: some View {
         VStack(spacing: 0) {
@@ -48,7 +49,6 @@ struct BusinessDetail: View {
                     } placeholder: {
                         ProgressView()
                     }
-                    //Image("firstwatch_preview")
                     .aspectRatio(contentMode: .fill)
                     .frame(width: 85, height: 85)
                     .cornerRadius(20.0)
@@ -117,7 +117,9 @@ struct BusinessDetail: View {
             
             Spacer()
             
-            Button(action: {}) {
+            Button(action: {
+                showDirection.toggle()
+            }) {
                 ZStack {
                     Rectangle()
                         .foregroundColor(.red)
@@ -131,6 +133,9 @@ struct BusinessDetail: View {
             }
             .padding(.bottom, 15.0)
             .tint(.white)
+            .sheet(isPresented: $showDirection) {
+                DirectionView(business: business)
+            }
         }
         .background(Color(red: 0.96078, green: 0.96078, blue: 0.97255))
     }
