@@ -169,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				E22B15002830432500864902 /* Map */,
+				E22B14FB282EF77000864902 /* Detail */,
 				E2AFE6D2282704E3003C2B3C /* List */,
 				E2AFE6D02827011D003C2B3C /* HomeView.swift */,
 			);
@@ -185,7 +186,6 @@
 		E2AFE6D2282704E3003C2B3C /* List */ = {
 			isa = PBXGroup;
 			children = (
-				E22B14FB282EF77000864902 /* Detail */,
 				E2AFE6D3282704F1003C2B3C /* BusinessList.swift */,
 				E2AFE6D5282706FD003C2B3C /* BusinessSectionHeader.swift */,
 				E2AFE6D7282707CB003C2B3C /* BusinessSection.swift */,
